@@ -78,15 +78,38 @@ img {
   clear: both;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .row {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row {
     margin-top: 0;
     padding: 10px;
   }
 
   .container:nth-of-type(odd) {
     background: #f2f2cd;
+  }
+
+  .row > div {
+    padding: 10px;
+  }
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    margin-top: 10px;
+  }
+
+  .row img {
+    height: 80px;
+  }
+
+  #why .row img {
+    padding: 10px;
   }
 }
 
